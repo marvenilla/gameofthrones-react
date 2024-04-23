@@ -1,0 +1,17 @@
+Data Flow in Game of Thrones Website
+
+Component Diagram
+Below is a simplified diagram showing the major components of the website and how data is passed between them:
+
+App Component (State Management)
+│
+├── Header (Receives active user data via props)
+│
+├── HeroSection (Receives global state data via props)
+│
+├── BookSection (Receives books data from state, allows state updates)
+│
+└── SeasonsSection (Receives seasons data from state, allows state updates)
+
+Each component receives data from the App component, where the global state is managed using useState. 
+This setup allows each component to be updated independently when the state changes, ensuring a reactive and dynamic user experience.

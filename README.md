@@ -16,4 +16,4 @@ Navigate to the project directory and run npm install to install the necessary p
 
 ### Start the application:
 
-Execute npm start to run the app in development mode. Access it via http://localhost:3000 in your browser. The app will automatically reload if you make edits.
+Execute npm start to run the app in development mode. Access it via http://localhost:3000 in your browser. The app will automatically reload if you make edits..

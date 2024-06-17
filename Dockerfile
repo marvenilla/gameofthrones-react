@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=build /usr/src/app/build /usr/share/nginx/html
 
 # Expose the port on which the app will run
-EXPOSE 80
+EXPOSE 5000
 
 # Command to run the app
 CMD ["nginx", "-g", "daemon off;"]

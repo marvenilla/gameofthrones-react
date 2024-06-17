@@ -303,3 +303,70 @@
   margin-bottom: 2rem;
   line-height: 1.6;
 }
+
+/* Auth css */
+.auth-container {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-size: 17px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #9aadb8;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: gray;
+}
+
+.bottom-text{
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 15px;
+  }
+
+  .registration-form h2 {
+    font-size: 1.5em;
+  }
+}
+

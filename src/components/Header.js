@@ -1,46 +1,33 @@
-import React, { useState } from "react";
-import Modal from "./Modal";
+import React from "react";
+import "../general.css";
+import "../style.css";
 
-const Header = ({ navLinks }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const hideModal = () => {
-    setIsModalVisible(false);
-  };
-
+function Header() {
   return (
-    <>
-      <header className="header">
-        <img
-          className="logo"
-          alt="Game of Thrones Quest Logo"
-          src="/img/gameofthrones-logo.png"
-        />
-        <nav className="main-nav">
-          <ul className="main-nav-list">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  className={`main-nav-link ${link.cta ? "nav-cta" : ""}`}
-                  href={link.path}
-                  onClick={showModal}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
-
-      {/* The modal component */}
-      <Modal isVisible={isModalVisible} hideModal={hideModal} />
-    </>
+    <header className="header">
+      <a href="/">
+      <img
+        className="logo"
+        alt="Game of Thrones Quest Logo"
+        src="/img/gameofthrones-logo.png"
+      />
+      </a>
+      <nav className="main-nav">
+        <ul className="main-nav-list">
+          <li>
+            <a className="main-nav-link" href="/">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="main-nav-link nav-cta" href="/login">
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-};
+}
 
 export default Header;
